@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Examples: Tabs, Dropdown & Filled Menu</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery (required for Bootstrap JS to function) -->
+ 
+  <!-- Custom Styles -->
+  <style>
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>All Menus on One Page</h2>
+  <div class="col-md-4 col-lg-3">
+  <!-- Filled Menu (Navbar) -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="disabled"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</div>
+  <!-- Dropdown Menu -->
+  <div class="col-md-4 col-lg-3">
+  <div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown Menu
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">ABCDE</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- Tab Menu -->
+  <div class="col-md-4 col-lg-3">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <h3>Home</h3>
+      <p>This is the home content.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <h3>Profile</h3>
+      <p>This is the profile content.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+      <h3>Messages</h3>
+      <p>This is the messages content.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+      <h3>Settings</h3>
+      <p>This is the settings content.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
