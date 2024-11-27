@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    background: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff80ab;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff80ab;
+    margin-bottom: 10px;
+}
+
+/* Form Sections */
+.form-section {
+    background-color: #f0e6f6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: 500;
+    color: #6a4c93;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1b2ff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9ff;
+}
+
+input:focus {
+    border-color: #ff80ab;
+    box-shadow: 0 0 5px rgba(255, 128, 171, 0.8);
+}
+
+button {
+    background-color: #ff80ab;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff66a1;
+}
+
+/* Employee Details */
+#employee-details {
+    margin-top: 20px;
+    background: #f0e6f6;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+.employee-detail {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.employee-detail span {
+    font-weight: 500;
+    color: #6a4c93;
+}
