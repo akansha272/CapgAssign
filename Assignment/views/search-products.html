@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Products</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Search for Products</h2>
+    <form method="GET" action="/user/search">
+      <input type="text" placeholder="Search by name or category" name="query" required />
+      <button type="submit" class="button">Search</button>
+    </form>
+  </div>
+  
+  <div class="card">
+    <h3>Search Results</h3>
+    {{#if products.length}}
+      <div class="product-grid">
+        {{#each products}}
+          <div class="product-card">
+            <h3>{{this.name}}</h3>
+            <p>{{this.category}}</p>
+            <p>${{this.price}}</p>
+            <a href="/user/product/{{this.id}}" class="button">View Details</a>
+          </div>
+        {{/each}}
+      </div>
+    {{else}}
+      <p>No products found matching your search.</p>
+    {{/if}}
+  </div>
+</body>
+</html>
