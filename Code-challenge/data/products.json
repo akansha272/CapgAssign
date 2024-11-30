@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Laptop",
+    "productId": "11221311",
+    "price": "32000",
+    "category": "Electronics",
+    "manufacturingDate": "2024-11-06",
+    "expirationDate": "2024-11-30"
+  }
+]

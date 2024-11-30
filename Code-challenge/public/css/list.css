@@ -1,0 +1,76 @@
+/* Soft, Cute Product List Page Styles */
+
+/* Container for product list */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9e6f1, #f4f4f9);
+}
+
+/* Page Title */
+.container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #4f4a5b;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #4f4a5b;
+}
+
+table th {
+    background-color: #f74c8b;
+    color: white;
+    font-size: 1.1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table td {
+    background-color: #f7e9f0;
+    font-size: 1rem;
+}
+
+table tr:hover td {
+    background-color: #ffebf0;
+}
+
+/* Add New Product Button */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #f74c8b;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #eb3a6f;
+    transform: scale(1.05);
+}

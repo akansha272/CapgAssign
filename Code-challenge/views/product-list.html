@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Product List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product ID</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Manufacturing Date</th>
+                    <th>Expiration Date</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Dynamic product rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+        <a href="/admin/add-product">
+            <button>Add New Product</button>
+        </a>
+    </div>
+
+    <script>
+        // Fetch and display products in the table
+        fetch('/admin/products')
+            .then(response => response.json())
+            .then(products => {
+                const productList = document.getElementById('product-list');
+                products.forEach(product => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${product.name}</td>
+                        <td>${product.productId}</td>
+                        <td>${product.price}</td>
+                        <td>${product.category}</td>
+                        <td>${product.manufacturingDate}</td>
+                        <td>${product.expirationDate}</td>
+                    `;
+                    productList.appendChild(row);
+                });
+            });
+    </script>
+
+</body>
+</html>

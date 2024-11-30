@@ -1,0 +1,122 @@
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f7fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the content */
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #7ec8f7;
+    background-color: #fff;
+}
+
+/* Button Styles */
+.search-btn {
+    background-color: #7ec8f7;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.search-btn:hover {
+    background-color: #4f98d6;
+}
+
+/* Results Section */
+#search-results {
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Small Screen Styles (Responsive) */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .search-btn {
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="number"] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

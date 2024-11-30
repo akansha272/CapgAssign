@@ -1,0 +1,93 @@
+/* Soft, Cute Register New Product Page Styles */
+
+/* Container for form */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9e6f1, #f4f4f9);
+}
+
+/* Page Title */
+.container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #4f4a5b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: 500;
+    color: #6c4f8c;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Input fields */
+.form-group input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #f3a0cd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #f7e9f0;
+}
+
+.form-group input:focus {
+    border-color: #f74c8b;
+    background-color: #fff5f8;
+}
+
+/* Submit button */
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #f74c8b;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #eb3a6f;
+    transform: scale(1.05);
+}
+
+/* Back to Product List Button */
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button.back-btn {
+    background-color: #8e7cc3;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+button.back-btn:hover {
+    background-color: #7a6aa1;
+}
