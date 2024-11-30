@@ -1,7 +1,0 @@
-const users = [
-    { username: 'admin', password: 'admin123', role: 'admin' },
-    { username: 'user1', password: 'user123', role: 'user' }
-  ];
-  
-  module.exports = users;
-  
