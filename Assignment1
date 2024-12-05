@@ -1,0 +1,43 @@
+package pack.cap.module1.basic;
+import java.util.Scanner;
+
+public class Assignment1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of items: ");
+        int numItems = scanner.nextInt();
+
+        double totalPrice = 0;
+
+        for (int i = 1; i <= numItems; i++) {
+            System.out.println("Enter details for item " + i + ":");
+
+            System.out.print("Enter the price of item " + i + " (in rupees): ");
+            byte itemPrice = scanner.nextByte();
+
+            System.out.print("Enter the quantity of item " + i + ": ");
+            int quantity = scanner.nextInt();
+
+            totalPrice += itemPrice * quantity;
+        }
+
+        System.out.print("Enter the sales tax rate (in percentage, e.g., 7 for 7%): ");
+        double salesTaxRate = scanner.nextDouble() / 100;
+
+        System.out.print("Enter the discount amount (in rupees): ");
+        double discount = scanner.nextDouble();
+
+        double salesTax = totalPrice * salesTaxRate;
+        double finalPrice = totalPrice + salesTax - discount;
+
+        System.out.println("\n--- Summary ---");
+        System.out.println("Total Price before tax: ₹" + String.format("%.2f", totalPrice));
+        System.out.println("Sales Tax: ₹" + String.format("%.2f", salesTax));
+        System.out.println("Discount: -₹" + String.format("%.2f", discount));
+        System.out.println("Final Price: ₹" + String.format("%.2f", finalPrice));
+
+        scanner.close();
+    }
+}
